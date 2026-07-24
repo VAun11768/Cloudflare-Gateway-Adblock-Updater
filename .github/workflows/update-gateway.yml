@@ -9,13 +9,13 @@ jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
-          ref: personal
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v6
